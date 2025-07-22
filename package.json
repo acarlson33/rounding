@@ -1,0 +1,32 @@
+{
+  "name": "rounding",
+  "version": "1.0.0",
+  "description": "Simple utilities for rounding and converting storage units",
+  "main": "dist/index.esm.js",
+  "private": false,
+  "files": [
+    "dist/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.4.3"
+  },
+  "keywords": [
+    "rounding",
+    "storage",
+    "conversion",
+    "math",
+    "utilities"
+  ],
+  "author": "Aqua427",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}
