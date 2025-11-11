@@ -6,18 +6,18 @@
  */
 export function toMB(
   value: number,
-  unit: "bytes" | "kilobytes" | "gigabytes"
+  unit: "B" | "KB" | "GB"
 ): number {
   let result: number;
 
   switch (unit) {
-    case "bytes":
+    case "B":
       result = value / (1024 * 1024);
       break;
-    case "kilobytes":
+    case "KB":
       result = value / 1024;
       break;
-    case "gigabytes":
+    case "GB":
       result = value * 1024;
       break;
     default:
