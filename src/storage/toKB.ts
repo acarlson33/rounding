@@ -6,18 +6,18 @@
  */
 export function toKB(
   value: number,
-  unit: "bytes" | "megabytes" | "gigabytes"
+  unit: "B" | "MB" | "GB"
 ): number {
   let result: number;
 
   switch (unit) {
-    case "bytes":
+    case "B":
       result = value / 1024;
       break;
-    case "megabytes":
+    case "MB":
       result = value * 1024;
       break;
-    case "gigabytes":
+    case "GB":
       result = value * 1024 * 1024;
       break;
     default:
